@@ -1,6 +1,6 @@
 ---
 name: design-guide
-description: Use when creating, reviewing, or improving UI designs for web apps, mobile apps, landing pages, or presentation slides. Trigger on tasks involving .pen files, mockups, wireframes, prototyping, layout decisions, typography, color, spacing, or any visual interface design work.
+description: UI 디자인 가이드. 웹 앱, 모바일 앱, 랜딩 페이지, 슬라이드 등 시각적 인터페이스를 설계·개선·검토할 때 반드시 사용하라. "대시보드 만들어줘", "화면 구성해줘", "UI 디자인해줘", "레이아웃 잡아줘", "목업 만들어줘" 같은 요청이 들어오면 이 스킬을 트리거하라. 와이어프레임, 프로토타이핑, 타이포그래피, 색상, 간격, 반응형 설계, 컴포넌트 배치 등 시각적 인터페이스 작업이라면 명시적으로 디자인을 언급하지 않더라도 이 스킬을 참조하라.
 ---
 
 # Design Guide — 사용자 중심 인터페이스 설계
@@ -182,22 +182,38 @@ F자 패턴으로 훑고 눈에 띄는 것에 반응한다. 따라서:
 
 ---
 
-## 5. 플랫폼별 상세 가이드
+## 5. 플랫폼별 가이드 — 반드시 참조하라
 
-작업 유형에 따라 해당 파일을 읽어라. 복합 요청(예: "웹 앱 + 랜딩 페이지")이면 관련 파일을 모두 읽되, **화면마다 지배적 패러다임 하나를 명확히 선택하라.**
+### 언제 읽는가 (Hard Gate)
 
-| 작업 | 파일 | 내용 |
-|------|------|------|
-| 웹 앱 — 패러다임 | `web-app-paradigms.md` | 4개 패러다임 (구조/커맨드/캔버스/피드) |
-| 웹 앱 — 컴포넌트 | `web-app-components.md` | 테이블, 폼, 모달, 내비, 검색, D&D 등 11개 패턴 |
-| 웹 앱 — 실무 수치 | `web-app-practical.md` | 접근성, 4개 수치 접근법, 애니메이션, 반응형, 대시보드 |
-| 모바일 앱 — 패러다임 | `mobile-app-paradigms.md` | 4개 패러다임 (스택/피드/레이어/대화) |
-| 모바일 앱 — 컴포넌트 | `mobile-app-components.md` | 제스처, 폼, 온보딩, 리스트, 바텀시트 등 12개 패턴 |
-| 모바일 앱 — 실무 수치 | `mobile-app-practical.md` | 접근성, iOS/Android 차이, 3개 수치 접근법, 내비, 성능 |
-| 랜딩 페이지 — 패러다임 | `landing-page-paradigms.md` | 3개 패러다임 (전환/내러티브/제품주도) |
-| 랜딩 페이지 — 섹션 | `landing-page-sections.md` | 헤더, 히어로, 신뢰, 기능, 가격, FAQ, CTA, 푸터 |
-| 랜딩 페이지 — 실무 수치 | `landing-page-practical.md` | 마이크로카피, CWV, 반응형, 업종별 변형, 스크롤, SEO |
-| 슬라이드 디자인 | `slides.md` | 3개 패러다임 + 4개 실무 접근법 |
+**디자인 작업을 시작하기 전에, 대상 플랫폼의 개요 문서를 반드시 먼저 읽어라.** 이 단계를 건너뛰면 안 된다.
+
+```
+사용자 요청 수신
+  ↓
+대상 플랫폼 판별 (웹 앱 / 모바일 앱 / 랜딩 페이지 / 슬라이드)
+  ↓
+★ 해당 플랫폼 개요 문서를 읽는다 ← 이 단계가 필수
+  ↓
+개요 문서의 워크플로우에 따라 세부 문서를 순서대로 참조
+  ↓
+설계 시작
+  ↓
+visual-and-verification.md로 마감 검증
+```
+
+복합 요청(예: "웹 앱 + 랜딩 페이지")이면 관련 개요 문서를 모두 읽되, **화면마다 지배적 패러다임 하나를 명확히 선택하라.**
+
+### 플랫폼별 진입점
+
+| 플랫폼 | 개요 문서 | 하위 세부 문서 |
+|--------|----------|--------------|
+| **웹 앱** | `web-app.md` | → paradigms, components, practical |
+| **모바일 앱** | `mobile-app.md` | → paradigms, components, practical |
+| **랜딩 페이지** | `landing-page.md` | → paradigms, sections, practical |
+| **슬라이드** | `slides.md` | (단일 문서에 통합) |
+
+각 개요 문서에 **설계 워크플로우(Step 1→2→3)**가 정의되어 있다. 해당 워크플로우를 따라 필요한 세부 문서를 순서대로 참조하라. 세부 문서로 직접 점프하지 말라.
 
 ---
 
