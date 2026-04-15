@@ -225,7 +225,50 @@ description: UI 디자인 가이드. 웹 앱, 모바일 앱, 랜딩 페이지, �
 
 ---
 
-## 5. 플랫폼별 가이드 — 반드시 참조하라
+## 5. 공통 레퍼런스 — 필요할 때 참조
+
+### UI 패턴 사전
+
+**"이 UI 이름이 뭐더라?"** 할 때 → `ui-pattern-dictionary.md`
+
+108종 UI 패턴의 명칭, 1줄 설명, 태그를 빠르게 찾는 레퍼런스. Navigation, Layout, Forms, Data Display 등 15개 카테고리로 분류.
+
+### 핵심 컴포넌트 상세
+
+**버튼/인풋/카드의 정확한 패딩, 간격이 필요할 때** → `core-components.md`
+
+자주 쓰이는 컴포넌트(Button, Input, Card, Modal, Toast, Badge, Avatar 등)의 사이즈별 스펙:
+- 높이, 패딩, 폰트 사이즈, 라운딩
+- 내부 요소 배치와 간격
+- Variant별 스타일
+- 간격 시스템, 라운딩 시스템 요약
+
+### 페이지 레이아웃 패턴
+
+**대시보드/설정/폼 페이지를 어떻게 구성하지?** → `page-layouts.md`
+
+자주 쓰이는 페이지 구조:
+- Dashboard Layout — KPI, 차트, 테이블 배치
+- Master-Detail Layout — 목록 → 상세 탐색
+- Settings Layout — 카테고리별 옵션
+- Form Page Layout — 입력 중심, 멀티스텝
+- Content Layout — 문서/블로그 읽기
+- Empty Page — 빈 상태 안내
+
+### 네비게이션 패턴
+
+**다중 네비게이션을 어떻게 설계하지?** → `navigation-patterns.md`
+
+단일부터 복잡한 다중 레벨까지:
+- 단일 네비게이션 (GNB만, 탭바만)
+- 2단 네비게이션 (GNB + LNB)
+- 3단 네비게이션 (GNB + LNB + Tab)
+- 다중 컨텍스트 (워크스페이스 스위처)
+- 모바일 전환 패턴
+
+---
+
+## 6. 플랫폼별 가이드 — 반드시 참조하라
 
 ### 언제 읽는가 (Hard Gate)
 
@@ -241,6 +284,8 @@ description: UI 디자인 가이드. 웹 앱, 모바일 앱, 랜딩 페이지, �
 ★ 해당 플랫폼 개요 문서를 읽는다 ← 이 단계가 필수
   ↓
 개요 문서의 워크플로우에 따라 세부 문서를 순서대로 참조
+  ↓
+필요 시 공통 레퍼런스 (섹션 5) 참조
   ↓
 설계 시작
   ↓
@@ -262,7 +307,7 @@ visual-and-verification.md로 마감 검증
 
 ---
 
-## 6. Hard Rules + 실패 장면
+## 7. Hard Rules + 실패 장면
 
 ### Hard Rules — 절대 위반 금지
 
@@ -303,7 +348,7 @@ visual-and-verification.md로 마감 검증
 
 ---
 
-## 7. 검증 — 제거 테스트로 확인하라
+## 8. 검증 — 제거 테스트로 확인하라
 
 **`visual-and-verification.md`를 반드시 참조하라.** 아래는 빠른 검증.
 
@@ -334,7 +379,7 @@ visual-and-verification.md로 마감 검증
 
 ---
 
-## 8. 코드 리뷰 모드 — 기존 UI 코드를 감사하라
+## 9. 코드 리뷰 모드 — 기존 UI 코드를 감사하라
 
 디자인 가이드는 새로 만드는 것뿐 아니라 **기존 코드를 검토하는 데에도** 사용된다.
 
