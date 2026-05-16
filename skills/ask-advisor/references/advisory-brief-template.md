@@ -47,6 +47,6 @@ Use this when the problem is too complex to paste as an informal chat message.
 - Operational risk:
 - User-facing impact:
 
-## Request To GPT Pro
+## Request To Advisor
 
 Please act as an independent deep advisor. Challenge weak assumptions, separate local bugs from structural design issues, and give a concrete recommendation with verification steps. If the evidence is insufficient, identify the smallest additional evidence needed.

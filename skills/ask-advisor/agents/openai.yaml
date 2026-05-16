@@ -1,0 +1,4 @@
+interface:
+  display_name: "Ask Advisor"
+  short_description: "외부 자문자로 복잡한 설계와 판단을 깊게 검증하고 보강"
+  default_prompt: "Use $ask-advisor to consult an external advisor on this complex problem and iterate until the answer is actionable."
