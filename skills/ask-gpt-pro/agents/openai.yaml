@@ -1,0 +1,4 @@
+interface:
+  display_name: "Ask GPT Pro"
+  short_description: "ChatGPT Pro에게 복잡한 문제의 깊은 판단을 요청"
+  default_prompt: "Use $ask-gpt-pro to consult ChatGPT Pro on this complex problem and iterate until the answer is actionable."
