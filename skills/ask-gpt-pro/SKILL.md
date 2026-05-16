@@ -27,6 +27,8 @@ ChatGPT Pro를 독립적인 자문자로 사용한다. 현재 Codex가 가진 �
 2. 전송할 맥락 패킷을 만든다.
    - 짧은 문제 보고서는 채팅 입력에 직접 붙여 넣는다.
    - 긴 코드, 로그, 스펙, diff는 필요한 부분만 압축 보고서로 만들거나 파일로 업로드한다.
+   - 판단에 필요한 파일이 여러 개라면 하나의 압축 파일로 묶어 전달한다. 불필요한 파일, 생성물, 중복 로그, vendor/dependency, 무관한 테스트 fixture는 적당히 tree-shaking한다.
+   - 가능하면 압축 파일 안의 핵심 파일은 10개 이하로 줄인다. 10개를 넘겨야 한다면 먼저 요약 보고서를 만들고, GPT Pro가 추가 파일을 요구할 때 확장한다.
    - 요청이 복잡하면 `references/advisory-brief-template.md`를 읽고 그 구조로 패킷을 작성한다.
 
 3. 안전 게이트를 처리한다.
@@ -42,6 +44,7 @@ ChatGPT Pro를 독립적인 자문자로 사용한다. 현재 Codex가 가진 �
 5. 자문 요청을 보낸다.
    - 파일이 필요한 경우 먼저 업로드한 뒤, 업로드된 파일명이 보이는지 확인한다.
    - 메시지에는 문제 보고서와 함께 다음을 요구한다: root cause 후보, 구조적 결함 여부, 놓친 가정, 반례, 권장 해결책, 검증 방법, 위험한 선택지.
+   - 반드시 즉답만 요구하지 않는다. 판단에 필요한 추가 정보, 제약사항, 로그, 코드 파일이 부족하면 더 좋은 답변을 위해 먼저 질문하거나 필요한 자료를 요청하라고 명시한다.
    - 단순 동의나 요약이 아니라 독립적인 판단을 요청한다.
 
 6. 답변을 끝까지 기다린다.
@@ -51,6 +54,7 @@ ChatGPT Pro를 독립적인 자문자로 사용한다. 현재 Codex가 가진 �
 
 7. 품질 루프를 돈다.
    - GPT Pro 답변이 문제의 핵심 원인, 실행 가능한 해결책, 검증 방법을 충분히 다루는지 판정한다.
+   - GPT Pro가 추가 정보나 파일을 요청하면, 요청이 타당한지 확인하고 필요한 맥락을 다시 tree-shaking해 전달한다.
    - 부족하면 추가 증거, 반례, 실패 로그, 코드 조각을 제공하고 다시 묻는다.
    - 필요한 경우 "이 결론에 반대하는 가장 강한 주장", "내가 놓친 위험", "이 접근의 최소 검증 실험"을 추가로 묻는다.
    - 원하는 수준의 답변이 나오면 핵심 결론과 적용 가능한 액션만 사용자에게 요약한다.
@@ -93,6 +97,9 @@ Please provide:
 4. A concrete fix or decision path.
 5. A verification plan.
 6. Any missing information that would materially change the answer.
+
+If you do not have enough information to answer well, do not force a final answer.
+Ask me for the specific missing files, logs, constraints, or context that would improve the judgment.
 ```
 
 ## Answer Handling
