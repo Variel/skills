@@ -1,6 +1,6 @@
 ---
 name: ask-advisor
-description: Use chatgpt.com as an external deep-thinking advisor for complex, ambiguous, high-stakes, or hard-to-solve problems. Trigger when the user explicitly asks for outside advice, an advisor, an oracle, a second opinion, or deeper thinking, and also use autonomously when Codex lacks confidence in an architecture or design direction, needs stronger validation of assumptions, must reason through many constraints and tradeoffs, wants a fresh perspective, needs adversarial review, or should seek deeper judgment before committing to a consequential decision.
+description: Consult an external advisor for complex, ambiguous, high-stakes, or hard-to-solve problems. Trigger when the user explicitly asks for outside advice, an advisor, an oracle, a second opinion, or deeper thinking, and also use autonomously when Codex lacks confidence in an architecture or design direction, needs stronger validation of assumptions, must reason through many constraints and tradeoffs, wants a fresh perspective, needs adversarial review, or should seek deeper judgment before committing to a consequential decision.
 ---
 
 # Ask Advisor
