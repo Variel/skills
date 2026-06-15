@@ -44,12 +44,21 @@ description: >-
 6. 빌더 ≠ 워크스루(다른 에이전트).
 7. 워크스루엔 스키마 금지 — 화면마다 그 자리에서 생각을 흘리고 직전 선택이 다음을 정함.
 
+## 라이브 모드(B-live) — 실기기 직접 조작
+정적 스크린샷의 한계(탭 결과 환각·'시작하기 이후' 미검증)를 없애려면, 워크스루(B)를 실기기 조작으로
+돌린다. rundroid의 핵심 컨셉(눈금자 스크린샷+탭 빨간 원)을 로컬 adb로 재현한 `scripts/device_driver.py`를
+페르소나 서브에이전트에 쥐여, dossier 인물이 되어 앱을 끝까지(입력·결과까지) 직접 몰게 한다. 빌더(A)·
+집계는 그대로. 단일 기기라 B는 1인씩 순차. 프롬프트·드라이버·절차·한계는 `references/live-walkthrough.md`.
+정적 모드로 첫인상 마찰을, 라이브 모드로 실제 인터랙션 결함을 잡는다(둘은 보완재).
+
 ## 한계
-- 정적 스크린샷은 탭 결과를 환각한다 — 인터랙션은 실제 구동(rundroid 등)으로 검증.
+- 정적 스크린샷은 탭 결과를 환각한다 — 인터랙션은 실제 구동(라이브 모드 `device_driver.py`/rundroid)으로 검증.
+- 라이브 모드는 단일 기기 직렬(N명=N×세션), 작은 버튼 빗나감(빨간 원+a11y로 보정), 한글 입력 제약.
 - 일지 누락·혼입 점검 후 손상분 제외·명시.
 
 ## 번들
 - `references/prompts.md` — 프롬프트 3개 + 스키마 2개 + 채울 입력 4개 (런타임 무관 원본)
 - `scripts/two_stage_sim.js` — 위 프롬프트를 담은 Claude Code Workflow 구현, `scripts/split_personas.py`
 - `references/k-persona.md` — 페르소나 샘플링(k-persona), 1단계로 먼저 사용
+- `references/live-walkthrough.md` — 라이브 모드(B-live) 프롬프트·절차, `scripts/device_driver.py`(눈금자 스크린샷 adb 재현)
 - `references/anti-contamination.md`, `references/worked-example.md`
