@@ -205,7 +205,7 @@ Stripe, Linear 스타일.
   서브-CTA 간격    = 32px
 
 CTA:
-  주 CTA  = height 48px, padding 0 32px, font 16px/600
+  주 CTA  = height 48px, padding 0 32px, font 16px/700
             radius 12px, 배경 #111, 글자 #FFF, hover → #333
   보조 CTA = height 48px, padding 0 24px, 테두리 1px #D1D5DB
   간격 = 12px
@@ -227,8 +227,8 @@ HubSpot, Shopify 스타일.
 히어로:
   높이 = auto (500-600px)
   2칼럼 = 텍스트 55% : 비주얼 45%, gap 48px
-  헤드라인 = 40-52px / weight 800 / line-height 1.15
-  배지 = 12px/600, padding 4px 12px, radius 99px, #EEF2FF/#4338CA
+  헤드라인 = 40-52px / weight 700 / line-height 1.15
+  배지 = 12px/400, padding 4px 12px, radius 99px, #EEF2FF/#4338CA
   신뢰 로고 바 = CTA 아래 16px, 로고 높이 24-32px, 회색조
 
 CTA:

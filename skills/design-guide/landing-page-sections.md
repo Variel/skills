@@ -20,8 +20,8 @@ z-index: 50 (모든 콘텐츠 위)
 
 네비게이션 항목:
   개수: 4-6개 (초과 시 "더보기" 드롭다운)
-  폰트: 14-15px, weight 500
-  활성: primary 색 또는 underline
+  폰트: 14-15px, weight 400
+  활성: primary 색 + 밑줄
   호버: opacity 0.7 → 1.0
 
 CTA 버튼:
@@ -116,7 +116,7 @@ CTA 버튼:
 
 히어로 배지(Announcement Badge):
   "✨ 새로운 기능 출시" / "Product Hunt #1" / "Y Combinator W24"
-  크기: 12px/600, padding 4-6px 12-16px, radius 99px
+  크기: 12px/400, padding 4-6px 12-16px, radius 99px
   색상: 연한 primary 배경(primary/10%) + primary 텍스트
   위치: 헤드라인 바로 위, 12-16px 간격
   링크: 클릭 시 상세 페이지 또는 블로그로 이동
@@ -144,7 +144,7 @@ CTA 버튼:
   예시:
     10,000+        99.9%        <50ms        150+
     활성 사용자     가동률       응답 시간     국가
-  수치: 32-48px, weight 700-800
+  수치: 32-48px, weight 700
   레이블: 14px, muted-foreground
   구분: 세로선 1px 또는 여백만으로 구분
   애니메이션: 뷰포트 진입 시 카운트업 (0 → 10,000+ / 1.5초)
@@ -251,7 +251,7 @@ CTA 버튼:
   수직 타임라인: 좌측 번호/아이콘, 우측 설명, 연결선
   일러스트: 각 단계가 하나의 이미지 scene
 
-  번호: 48-64px, weight 700-900, primary 색 또는 muted
+  번호: 48-64px, weight 700, 정보용 색상 토큰
   아이콘: 번호 대신 사용 시 48px
   연결선: 번호 사이 1-2px dashed, muted 색
 

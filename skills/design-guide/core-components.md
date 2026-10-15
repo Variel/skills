@@ -105,7 +105,7 @@ Label
 ↓ 4px gap
 Helper text / Error message
 
-레이블: 13px, weight 500
+레이블: 13px, weight 400
 헬퍼: 12px, muted-foreground
 에러: 12px, destructive
 필수 표시(*): 레이블 직후, destructive 색
@@ -188,7 +188,7 @@ full     90vw         32px
 │                        [Cancel] [Save] │  ← 푸터: py-16px, px-패딩
 └─────────────────────────────────────────┘
 
-타이틀: 18px (sm), 20px (md+), weight 600
+타이틀: 18px (sm), 20px (md+), weight 700
 닫기 버튼: 32px 터치 영역, 아이콘 20px
 푸터 버튼 gap: 12px
 푸터 버튼 정렬: 우측 (기본), 전체너비 (모바일)
@@ -293,8 +293,8 @@ xl     64px    20px 폰트
 ```
 라운딩: full (원형) — 기본값
 폴백 순서: 이미지 → 이니셜 → 기본 아이콘
-이니셜: 첫 글자 1-2개, weight 500, 대문자
-상태 표시: 우하단 12px 원 (online/offline)
+이니셜: 이름에서 추출한 1-2글자, weight 400, 해당 언어의 정식 표기 유지
+상태 표시: 우하단 12px 원 + 인접한 상태 텍스트 (online/offline)
 ```
 
 ### 아바타 그룹

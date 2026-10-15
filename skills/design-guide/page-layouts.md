@@ -358,7 +358,7 @@ Mobile (<1024px): Content만 (TOC 햄버거, Sidebar 하단 또는 숨김)
 
 ```
 일러스트(선택): 이해를 도울 때 120-200px
-제목: 20-24px, weight 600
+제목: 20-24px, weight 700
 안내(필요할 때): 14-16px, muted, max-width 400px, 중앙 정렬
 CTA: primary 버튼, 마지막 콘텐츠 아래 24px 간격
 전체: 수직/수평 중앙 정렬

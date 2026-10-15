@@ -98,7 +98,7 @@ SaaS 대시보드, 관리자 패널의 표준 구조.
 **LNB 스펙:**
 - 너비: 240px (펼침), 64px (접힘)
 - 패딩: 12-16px
-- 섹션 레이블: 12px, uppercase, muted, 8px 상단 여백
+- 섹션 레이블: 12px, Regular, sentence case, muted, 8px 상단 여백
 - 항목 높이: 40px
 - 항목 패딩: 12px 좌우
 - 아이콘: 20px, 레이블 좌측 12px 간격

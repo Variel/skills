@@ -63,7 +63,7 @@
 
 ### Step 4. 마감 검증 (필수, 최종)
 
-`visual-and-verification.md`를 읽고 미학적 방향과 검증 체크리스트를 적용하라. 플랫폼과 무관하게 모든 디자인의 마감 단계에서 반드시 거쳐야 한다.
+[visual-and-verification.md](visual-and-verification.md)와 [visual-audit.md](visual-audit.md)를 읽고, 실제 렌더링 화면의 전체 영역·상태를 점검하라. 문제를 수정한 뒤에는 같은 조건의 화면에서 수정 부위와 전체 영역을 재검증하라. 기존 화면의 감사는 수정 전에 이 절차로 시작한다.
 
 ---
 

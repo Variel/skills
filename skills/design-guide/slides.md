@@ -1,5 +1,7 @@
 # 프레젠테이션 슬라이드 디자인 가이드
 
+서체·굵기·대소문자 기준은 [visual-and-verification.md](visual-and-verification.md)를 따른다. 감사할 때는 [visual-audit.md](visual-audit.md)에 따라 모든 슬라이드를 훑고, 표·차트·각주와 화면 경계를 확인하라. 발표용은 실제 투사 환경, 문서용은 실제 열람 크기를 기준으로 검증한다.
+
 > 프레젠테이션의 본질적 질문: "이 덱은 스피커를 위한 것인가, 아니면 문서 대용인가?" 그 답에 따라 설계 철학이 완전히 갈린다.
 
 ## 패러다임 A: 스피커 보조물 — 슬라이드는 배경이다
@@ -23,7 +25,7 @@
 - 최대 2개 폰트 패밀리
 - **최소 28pt** / 본문 36-80pt / 타이틀 80-200pt
 - 크기가 아니라 두께(weight)로 구분
-- line-height ~1.1-1.2 / **항상 높은 대비**
+- 짧은 제목의 line-height는 1.1-1.2, 여러 줄 본문은 1.5를 기본으로 한다. **항상 높은 대비**를 유지하라.
 
 포맷:
 - 16:9, 1920×1080
@@ -125,8 +127,8 @@ McKinsey, Bain 스타일.
 
 타이포:
   액션 타이틀 = 28-36pt Bold (결론 자체)
-  본문        = 20-24pt Regular / line-height 1.3
-  주석/출처   = 14-16pt Light / #999999
+  본문        = 20-24pt Regular / line-height 1.5
+  주석/출처   = 14-16pt Regular / #666666 (밝은 배경 기준, 실제 배경과 대비 확인)
   데이터 숫자 = 48-72pt Bold
 
 색상 (보수적):
@@ -149,10 +151,10 @@ YC, Sequoia 스타일.
 
 ```
 타이포:
-  히어로 숫자   = 120-200pt / weight 900 / tracking -0.04em
-  히어로 텍스트 = 64-96pt / weight 800 / 최대 2줄
+  히어로 숫자   = 120-200pt / weight 700 / tracking -0.04em
+  히어로 텍스트 = 64-96pt / weight 700 / 최대 2줄
   서브 텍스트   = 28-36pt / weight 400
-  라벨          = 14-18pt / 600 / uppercase / tracking +2px
+  라벨          = 14-18pt / 400 / sentence case / tracking 0
 
 색상 (대담):
   어두운 배경 #0F172A / 밝은 #FFFFFF
@@ -173,8 +175,8 @@ Apple Keynote, TED 스타일.
 
 ```
 타이포:
-  키워드   = 80-160pt / weight Black / 1-3단어만
-  보조     = 36-48pt / weight Light
+  키워드   = 80-160pt / weight 700 / 1-3단어만
+  보조     = 36-48pt / weight 300 (실제 투사 환경에서 가독성 확인)
   텍스트 없는 슬라이드 = 전체의 30-50%
 
 이미지:
@@ -195,9 +197,9 @@ Coursera, Google I/O 스타일.
 
 ```
 타이포:
-  섹션 번호      = 120pt / weight 900 / 강조색
+  섹션 번호      = 120pt / weight 700 / 강조색
   슬라이드 타이틀 = 36-44pt Bold
-  본문           = 24-28pt Regular / line-height 1.4
+  본문           = 24-28pt Regular / line-height 1.5
   코드           = 20-24pt monospace / 배경 #1E1E1E / 패딩 32px
 
 레이아웃:

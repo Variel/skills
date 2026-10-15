@@ -38,8 +38,11 @@ VoiceOver (iOS) / TalkBack (Android):
 
 색상 & 대비:
   텍스트: 4.5:1 이상 (WCAG AA)
-  대형 텍스트 (18px+): 3:1 이상
-  UI 컴포넌트: 3:1 이상
+  큰 텍스트: 3:1 이상 (웹뷰 CSS 기준 24px 이상 또는 Bold 약 18.67px 이상)
+  네이티브 앱: 플랫폼의 텍스트 스타일·단위·배율을 확인하고, 분류가 불명확하면 4.5:1 적용
+  조작·상태 식별에 필요한 비텍스트 시각 단서: 인접 색과 3:1 이상
+  사진·반투명 배경: 실제 합성 배경과의 대비 측정
+  상태 구별: 색상 + 텍스트·아이콘·형태
 
   야외 사용 고려:
     햇빛 아래에서도 읽을 수 있는가?
@@ -115,6 +118,8 @@ VoiceOver (iOS) / TalkBack (Android):
 
 ### 접근법 A: iOS HIG 기반
 
+네이티브 텍스트 스타일은 플랫폼의 굵기와 Dynamic Type 동작을 유지하라. 아래 값은 기본 크기의 참고값이며, 구현에서는 의미에 맞는 시스템 텍스트 스타일을 선택하라.
+
 ```
 고정 치수:
   상태 바         = 54px (Dynamic Island), 47px (노치), 20px (구형)
@@ -141,6 +146,8 @@ VoiceOver (iOS) / TalkBack (Android):
 ```
 
 ### 접근법 B: Material Design 3 기반
+
+플랫폼의 텍스트 스타일을 사용할 때는 해당 토큰을 유지하라. 긴 읽기용 본문을 별도로 설계하면 실제 언어·글자 크기에 맞춰 행간 1.5~1.8을 출발점으로 검증하라.
 
 ```
 고정 치수:
@@ -175,11 +182,11 @@ Shape: None(0) → ExtraSmall(4dp) → Small(8dp) → Medium(12dp) → Large(16d
   s   = 6px   lg  = 24px   3xl = 72px
 
 타이포 (브랜드 폰트):
-  Micro    = 10px/600/uppercase/tracking +1.5px
+  Label    = 12px/400/line-height 1.5
   Caption  = 12px/400/tracking +0.3px
   Body     = 16px/400/line-height 1.5
   Title    = 24px/700/tracking -0.5px
-  Hero     = 32px/800/tracking -1.0px
+  Hero     = 32px/700/tracking -1.0px
 
 컴포넌트:
   리스트 아이템 = 56px 높이

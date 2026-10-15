@@ -34,9 +34,11 @@ ARIA 라이브 리전 결정:
 
 색상 대비:
   일반 텍스트: 4.5:1 이상 (WCAG AA)
-  대형 텍스트(18px+ 또는 14px+ Bold): 3:1 이상
-  UI 컴포넌트(아이콘, 테두리): 3:1 이상
-  권장: APCA 기준 Lc 60+ (본문), Lc 45+ (대형 텍스트)
+  대형 텍스트(24px 이상 또는 Bold 약 18.67px 이상): 3:1 이상
+  조작·상태 식별에 필요한 아이콘·테두리·그래픽: 인접 색과 3:1 이상
+  사진·반투명 배경: 실제 합성 배경과의 대비 측정
+  비활성 컨트롤·장식·로고 등은 해당 WCAG 성공 기준의 예외 범위를 확인
+  상태 구별: 색상 + 텍스트·아이콘·형태, 본문 속 링크: 밑줄 기본
 
 모션:
   prefers-reduced-motion: reduce 미디어 쿼리 존중
@@ -47,6 +49,8 @@ ARIA 라이브 리전 결정:
 ---
 
 ## 실무 수치 — 간격, 타이포, 색상
+
+타이포그래피는 [공통 기준](visual-and-verification.md)을 따른다. 아래 커스텀 예시는 본문 Regular(400)와 제목·강조 Bold(700)를 사용한다. 여러 줄의 읽기용 본문은 행간 1.5~1.8을 기본으로 하고, 짧은 레이블과 컨트롤은 용도에 맞게 정한다.
 
 ### 접근법 A: 8px 그리드 시스템 — 구조적 엄밀함
 
@@ -68,9 +72,9 @@ ARIA 라이브 리전 결정:
 
   음수 간격(Negative): -2px ~ -32px (컨테이너 패딩 탈출, 요소 겹침 시)
 
-타이포그래피 (8px line-height 정렬):
+타이포그래피 (본문 가독성을 유지하며 8px 그리드에 정렬):
   Caption     12px / line-height 16px (2×8)
-  Body-sm     14px / line-height 20px
+  Body-sm     14px / line-height 24px
   Body        16px / line-height 24px (3×8)
   Heading-sm  20px / line-height 28px
   Heading     24px / line-height 32px (4×8)
@@ -94,12 +98,12 @@ ARIA 라이브 리전 결정:
   1   = 4px    3   = 12px   6   = 24px
   1.5 = 6px    4   = 16px   8   = 32px
 
-타이포그래피 (Geist 스타일):
+타이포그래피 (커스텀 웹 앱 예시):
   Caption     11px / line-height 16px / tracking +0.01em / weight 400
-  Label       13px / line-height 16px / tracking +0.00em / weight 500
-  Body        14px / line-height 20px / tracking  0.00em / weight 400
-  Title       16px / line-height 24px / tracking -0.011em/ weight 500
-  Heading     24px / line-height 32px / tracking -0.029em/ weight 600
+  Label       13px / line-height 16px / tracking +0.00em / weight 400
+  Body        14px / line-height 22px / tracking  0.00em / weight 400
+  Title       16px / line-height 24px / tracking -0.011em/ weight 700
+  Heading     24px / line-height 32px / tracking -0.029em/ weight 700
   Display     48px / line-height 48px / tracking -0.040em/ weight 700
 
 버튼:
@@ -149,9 +153,9 @@ ARIA 라이브 리전 결정:
     Surface-2   = #1A1A1A (호버, 선택)
     Surface-3   = #222222 (인풋, 드롭다운)
   텍스트:
-    Primary     = #EDEDED (대비 15.4:1)
-    Secondary   = #A0A0A0 (대비 7.1:1)
-    Tertiary    = #666666 (대비 3.8:1)
+    Primary     = #EDEDED
+    Secondary   = #A0A0A0
+    Tertiary    = #8A8A8A
   테두리:
     Subtle      = #1F1F1F
     Default     = #2E2E2E
@@ -169,6 +173,8 @@ ARIA 라이브 리전 결정:
 ```
 
 **적합**: 코드 에디터, 미디어 플랫폼, 데이터 모니터링.
+
+위 팔레트는 출발점이다. 텍스트·상태 표시가 놓이는 각 Surface와의 대비를 측정하라. 테두리 토큰은 장식용인지 컨트롤 식별용인지에 따라 구분하고, 식별에 필요한 테두리는 3:1 기준을 충족하는 색으로 조정하라. [WCAG 텍스트 대비](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html)와 [비텍스트 대비](https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html)를 적용한다.
 
 ---
 
