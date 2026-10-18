@@ -1,4 +1,0 @@
-interface:
-  display_name: "위임"
-  short_description: "사용자는 덜 챙기고, 에이전트는 끝까지 책임진다."
-  default_prompt: "$delegation 스킬을 적용하여 전체 목표를 유지하면서 작업을 수행하고, 필요한 하위 위임과 진행 보고를 책임져 줘."

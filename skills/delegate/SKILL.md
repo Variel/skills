@@ -1,5 +1,5 @@
 ---
-name: delegation
+name: delegate
 description: 사용자는 덜 챙기고, 에이전트는 끝까지 책임진다. 서브에이전트 위임·조율·보고에 사용한다.
 ---
 
